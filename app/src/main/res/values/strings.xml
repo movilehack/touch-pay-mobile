@@ -6,4 +6,8 @@
     <string name="txt_sub_title_login">Informe o seu usuário e senha para entrar</string>
     <string name="txt_sign_up">Cadastrar</string>
     <string name="txt_sign_in">Entrar</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="txt_button_next">Próximo</string>
 </resources>
