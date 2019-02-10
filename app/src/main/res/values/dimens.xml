@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="txt_title">60</dimen>
+    <dimen name="txt_sub_title">30</dimen>
+    <dimen name="edtxt_label_size">24sp</dimen>
+</resources>
