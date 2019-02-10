@@ -10,6 +10,10 @@ class MainActivity : BaseActivity<MainView>(), MainView {
     override val layoutId: Int = R.layout.activity_main
     override val presenter: MainPresenter by instance()
 
+    override fun onCreate() {
+        presenter.subscribe()
+    }
+
     override fun setPresenter() {
         presenter.attachView(this)
     }

@@ -17,9 +17,10 @@ abstract class BaseActivity<V : BaseView> : AppCompatActivity(), BaseView, Kodei
         setContentView(layoutId)
 
         setPresenter()
-
-        presenter.subscribe()
+        onCreate()
     }
+
+    protected abstract fun onCreate()
 
     protected abstract fun setPresenter()
 
