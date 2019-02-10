@@ -26,7 +26,7 @@ class SignInActivity : BaseActivity<SignInView>(), SignInView {
 
     override fun onCreate() {
 
-//        errorLabel = findViewById(R.id.lblError)
+        errorLabel = findViewById(R.id.lblError)
         emailInput = findViewById(R.id.edtxtEmail)
         passwordInput = findViewById(R.id.edtxtPassword)
 
@@ -38,7 +38,7 @@ class SignInActivity : BaseActivity<SignInView>(), SignInView {
     }
 
     private fun clickedSignInButton() {
-//        errorLabel.visibility = View.INVISIBLE
+        errorLabel.visibility = View.INVISIBLE
 
         val email = emailInput.text.toString()
         val password = passwordInput.text.toString()
@@ -47,7 +47,7 @@ class SignInActivity : BaseActivity<SignInView>(), SignInView {
     }
 
     private fun clickedSignUpButton() {
-//        errorLabel.visibility = View.INVISIBLE
+        errorLabel.visibility = View.INVISIBLE
 
         presenter.performSignUp()
     }
@@ -57,17 +57,17 @@ class SignInActivity : BaseActivity<SignInView>(), SignInView {
     }
 
     override fun showError(messageId: Int) {
-//        errorLabel.apply {
-//           text = getString(messageId)
-//           visibility = View.VISIBLE
-//       }
+        errorLabel.apply {
+           text = getString(messageId)
+           visibility = View.VISIBLE
+       }
     }
 
     override fun showError(messsage: String) {
-//        errorLabel.apply {
-//            text = messsage
-//            visibility = View.VISIBLE
-//        }
+        errorLabel.apply {
+            text = messsage
+            visibility = View.VISIBLE
+        }
     }
 
     override fun proceedToMain() {

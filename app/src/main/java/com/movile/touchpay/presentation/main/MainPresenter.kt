@@ -21,6 +21,10 @@ class MainPresenter(private val sampleUseCase: SampleUseCase) : BasePresenter<Ma
         compositeDisposable.add(disposable)
     }
 
+    fun performReceive() {
+        view?.proceedToReceive()
+    }
+
     override fun subscribe() {
         loadContent()
     }

@@ -5,4 +5,5 @@ import com.movile.touchpay.presentation.common.BaseView
 interface MainView : BaseView {
 
     fun showSampleContent()
+    fun proceedToReceive()
 }
