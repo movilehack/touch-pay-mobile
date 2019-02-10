@@ -1,0 +1,59 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.movile.touchpay.presentation.signup.FirstStepFragment"
+        android:id="@+id/thirdStepLayout">
+
+
+    <TextView
+            android:text="Pra finalizar, só precisamos do seu email e que você defina uma senha"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="16dp" android:textSize="18sp" android:textAlignment="center"/>
+    <TextView
+            android:text="E-mail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblEmail"
+            android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="16dp" app:layout_constraintHorizontal_bias="0.5" android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/edtxtEmail"
+            app:layout_constraintVertical_chainStyle="packed"/>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/edtxtEmail" android:layout_marginStart="16dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/lblEmail" app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintBottom_toTopOf="@+id/lblPassword"/>
+    <TextView
+            android:text="Usuário"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblPassword" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/edtxtEmail" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="16dp" app:layout_constraintHorizontal_bias="0.5" android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/edtxtPassword"/>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/edtxtPassword" android:layout_marginStart="16dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/lblPassword" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
